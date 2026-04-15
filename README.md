@@ -1,59 +1,92 @@
+# 🔐 Laboratorio #2 - Implementación de Login en Laravel
+**Alumno: Joseph Córdoba | Cédula: 8-1025-2381 | Grupo: 1GS131 | Profesora: Ingeniera Irina Fong**
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 📌 Descripción
+Este laboratorio tiene como objetivo implementar un sistema de autenticación (login) utilizando el framework Laravel, aplicando la arquitectura Modelo-Vista-Controlador (MVC).  
 
-## About Laravel
+Se documenta el proceso completo desde la configuración del entorno hasta la ejecución final del sistema.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🎯 Objetivos
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- Comprender la importancia de la documentación en proyectos de software.
+- Aplicar la arquitectura MVC en Laravel.
+- Implementar un sistema de autenticación (login).
+- Identificar problemas y soluciones durante el desarrollo.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🧩 Arquitectura MVC en Laravel
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- **Modelos (Models):** Representan la estructura de la base de datos.
+- **Vistas (Views):** Interfaz de usuario (Blade).
+- **Controladores (Controllers):** Manejan la lógica del sistema.
+- **Rutas (Routes):** Definen las URLs del sistema.
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## ⚙️ Requisitos Previos
 
-### Premium Partners
+- PHP 8.0 o superior  
+- Composer  
+- Laravel  
+- XAMPP / WampServer / Laragon  
+- Apache o Nginx  
+- MySQL o MariaDB  
+- Visual Studio Code  
+- Node.js y npm (si aplica)  
+- Sistema Operativo (Windows/Linux)
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+## 🚀 Instalación
+**Es importante tener el Composer instalado antes de instalar el Laravel.**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Si no tienes el Composer instalado, puedes instalarlo aquí: [Descarga Composer aquí](https://getcomposer.org/download/)
 
-## Code of Conduct
+**1. Crear archivo**
+```bash
+composer create-project laravel/laravel (Nombre de tu archivo)
+```
+**2. Configurar entorno (.env)**
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laboratoriolaravel1
+DB_USERNAME=root
+DB_PASSWORD=
+```
+**3. Crear base de datos**
+1. Entrar a phpMyAdmin
+2. Crear la base de datos a utilizar
+3. Ejecutar migraciones
+```bash
+php artisan migrate
+```
+## 🔐 Instalación de Laravel Breeze
+```bash
+composer require laravel/breeze --dev
+php artisan breeze:install
+npm install
+npm run dev
+php artisan migrate
+```
+## 👾 Base de datos
+Laravel utiliza migraciones para crear tablas automáticamente.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Tablas generadas:
 
-## Security Vulnerabilities
+- users
+- migrations
+- sessions
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🗣️ Ejecución
+```bash
+composer run dev
+```
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Pruebas
