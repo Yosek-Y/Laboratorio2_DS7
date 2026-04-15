@@ -89,4 +89,35 @@ Tablas generadas:
 composer run dev
 ```
 
-## Pruebas
+## 🖼️ Pruebas del sistema
+<p align="center">
+  <img src="imagenes/Captura de pantalla 2026-04-14 205523.png" width="500">
+</p>
+<p align="center">
+  <img src="imagenes/Captura de pantalla 2026-04-14 210437.png" width="500">
+</p>
+
+## 🚩🚩 Dificultades y Soluciones
+**❌ El error principal que tuve fue no tener instalado el NPM.**
+
+**✅ Solución: Instalar Node.js**
+
+**❌ No tener el php.zip activado**
+
+**✅ Solución: Corregir en el .txt para proceder con la instalación**
+
+## 📚 Referencias
+- https://laravel.com/docs/12.x 
+-  https://laravel.com/docs/12.x/installation
+
+## 🦶 Footer
+**Este laboratorio ha sido desarrollado por el estudiante de la Universidad Tecnológica de Panamá:**
+
+- Nombre: Joseph Córdoba
+- Correo: josephcordoba2318@gmail.com
+- Correo: joseph.cordoba@utp.ac.pa
+- Curso: Desarrollo de Software VII
+- Instructor del Laboratorio: Irina Fong.
+
+## 📅 Fecha
+14 de Abril del 2026
